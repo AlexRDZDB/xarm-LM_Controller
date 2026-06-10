@@ -1,0 +1,15 @@
+services:
+  xarm_controller:
+    build:
+      context: .
+      args:
+        ROBOT_IP: ${ROBOT_IP}
+        ROBOT_DOF: ${ROBOT_DOF}
+        CONTROL_FREQ: ${CONTROL_FREQ}
+    env_file:
+      - .env
+    network_mode: host
+    volumes:
+      - ./src:/workspace/src
+    stdin_open: true
+    tty: true
