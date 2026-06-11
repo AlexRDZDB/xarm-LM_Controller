@@ -30,6 +30,7 @@ setup(
     entry_points={
         'console_scripts': [
             'xarm_interface_node = lm_controller.xarm_interface_node:main',
+            'lm_controller_node = lm_controller.lm_controller_node:main',
         ],
     },
 )

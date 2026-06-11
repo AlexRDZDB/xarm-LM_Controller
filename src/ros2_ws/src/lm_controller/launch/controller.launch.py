@@ -1,71 +1,53 @@
+import os
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
+from launch.conditions import IfCondition
 from launch_ros.actions import Node
-from launch.conditions import IfCondition, UnlessCondition
 
 
 def generate_launch_description():
-    # ── Launch arguments ───────────────────────────────────────────────────────
+
+    pkg_share = get_package_share_directory('lm_controller')
+
+    urdf_path = os.path.join(pkg_share, 'lite6_urdf', 'lite6.urdf')
+
     sim_arg = DeclareLaunchArgument(
         'sim',
         default_value='true',
-        description='Run in simulation mode (true) or real robot (false)'
-    )
-
-    robot_ip_arg = DeclareLaunchArgument(
-        'robot_ip',
-        default_value='192.168.1.xxx',
-        description='IP address of the real xArm robot'
-    )
-
-    dof_arg = DeclareLaunchArgument(
-        'dof',
-        default_value='7',
-        description='Degrees of freedom of the xArm (5, 6, or 7)'
-    )
-
-    control_freq_arg = DeclareLaunchArgument(
-        'control_freq',
-        default_value='250',
-        description='Control loop frequency in Hz'
+        description='Launch in simulation mode'
     )
 
     sim = LaunchConfiguration('sim')
 
-    # ── Sim node ───────────────────────────────────────────────────────────────
-    sim_node = Node(
-        package='lm_controller',
-        executable='xarm_interface_node',
-        name='xarm_interface_node',
-        output='screen',
-        condition=IfCondition(sim),
-        parameters=[{
-            'dof':          LaunchConfiguration('dof'),
-            'control_freq': LaunchConfiguration('control_freq'),
-        }],
-        arguments=['--sim']
+    # ── Gazebo simulation ──────────────────────────────────────────────────────
+    gazebo_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_share, 'launch', 'gazebo.launch.py')
+        ),
+        condition=IfCondition(sim)
     )
 
-    # ── Real robot node ────────────────────────────────────────────────────────
-    real_node = Node(
+    # ── LM Null Space Controller node ──────────────────────────────────────────
+    controller_node = Node(
         package='lm_controller',
-        executable='xarm_interface_node',
-        name='xarm_interface_node',
+        executable='lm_controller_node',
+        name='lm_null_space_controller',
         output='screen',
-        condition=UnlessCondition(sim),
         parameters=[{
-            'robot_ip':     LaunchConfiguration('robot_ip'),
-            'dof':          LaunchConfiguration('dof'),
-            'control_freq': LaunchConfiguration('control_freq'),
-        }]
+            'urdf_path':    urdf_path,
+            'control_freq': 250,
+            'dof':          6,
+            'lambda_damp':  0.04,
+            'alpha':        0.1,
+            'sim_mode':      True,
+        }],
     )
 
     return LaunchDescription([
         sim_arg,
-        robot_ip_arg,
-        dof_arg,
-        control_freq_arg,
-        sim_node,
-        real_node,
+        gazebo_launch,
+        controller_node,
     ])

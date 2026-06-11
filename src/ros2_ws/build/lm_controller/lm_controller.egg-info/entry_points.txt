@@ -1,3 +1,4 @@
 [console_scripts]
+lm_controller_node = lm_controller.lm_controller_node:main
 xarm_interface_node = lm_controller.xarm_interface_node:main
 
