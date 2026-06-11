@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing lm_controller.egg-info/PKG-INFO
+writing dependency_links to lm_controller.egg-info/dependency_links.txt
+writing entry points to lm_controller.egg-info/entry_points.txt
+writing requirements to lm_controller.egg-info/requires.txt
+writing top-level names to lm_controller.egg-info/top_level.txt
+reading manifest file 'lm_controller.egg-info/SOURCES.txt'
+writing manifest file 'lm_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages/lm-controller.egg-link (link to .)
+Installing xarm_interface_node script to /workspace/src/ros2_ws/install/lm_controller/lib/lm_controller
+
+Installed /workspace/src/ros2_ws/build/lm_controller
+running symlink_data
+symbolically linking /workspace/src/ros2_ws/build/lm_controller/launch/gazebo.launch.py -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/launch

@@ -25,7 +25,7 @@ class XArmInterfaceNode(Node):
         self.robot_ready = False
 
         # ── Simulation Interface ───────────────────────────────────────────────────
-        if self.sim_mode
+        if self.sim_mode:
             # Publisher
             self.joint_cmd_pub = self.create_publisher(
                 JointState,

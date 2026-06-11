@@ -1,0 +1,19 @@
+[0.356s] Invoking command in '/workspace/src/ros2_ws/build/lm_controller': PYTHONPATH=/workspace/src/ros2_ws/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/ros2_ws/build/lm_controller/build --no-deps symlink_data
+[0.495s] running develop
+[0.567s] running egg_info
+[0.567s] writing lm_controller.egg-info/PKG-INFO
+[0.567s] writing dependency_links to lm_controller.egg-info/dependency_links.txt
+[0.567s] writing entry points to lm_controller.egg-info/entry_points.txt
+[0.567s] writing requirements to lm_controller.egg-info/requires.txt
+[0.567s] writing top-level names to lm_controller.egg-info/top_level.txt
+[0.569s] reading manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.570s] writing manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.570s] running build_ext
+[0.570s] Creating /workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages/lm-controller.egg-link (link to .)
+[0.571s] Installing xarm_interface_node script to /workspace/src/ros2_ws/install/lm_controller/lib/lm_controller
+[0.571s] 
+[0.571s] Installed /workspace/src/ros2_ws/build/lm_controller
+[0.571s] running symlink_data
+[0.572s] creating /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/config
+[0.572s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/config/controllers.yaml -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/config
+[0.595s] Invoked command in '/workspace/src/ros2_ws/build/lm_controller' returned '0': PYTHONPATH=/workspace/src/ros2_ws/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/ros2_ws/build/lm_controller/build --no-deps symlink_data

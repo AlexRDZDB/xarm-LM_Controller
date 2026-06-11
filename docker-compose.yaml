@@ -9,7 +9,11 @@ services:
     env_file:
       - .env
     network_mode: host
+    environment:
+      - DISPLAY=${DISPLAY}
+      - LIBGL_ALWAYS_SOFTWARE=1
     volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
       - ./src:/workspace/src
     stdin_open: true
     tty: true

@@ -15,6 +15,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     net-tools \
     iputils-ping \
+    ros-humble-gazebo-ros \
+    ros-humble-gazebo-ros2-control \
+    ros-humble-ros2-control \
+    ros-humble-ros2-controllers \
+    ros-humble-joint-state-publisher \
+    ros-humble-robot-state-publisher \
+    ros-humble-xacro \
     && rm -rf /var/lib/apt/lists/*
 
 # ── Python dependencies ───────────────────────────────────────────────────────
@@ -22,7 +29,8 @@ RUN pip3 install --no-cache-dir \
     numpy \
     scipy \
     xArm-Python-SDK \
-    pin                 
+    pin \
+    python-dotenv
 
 # ── Workspace setup ───────────────────────────────────────────────────────────
 RUN mkdir -p /workspace/src

@@ -1,0 +1,43 @@
+[0.422s] Invoking command in '/workspace/src/build/lm_controller': PYTHONPATH=/workspace/src/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/build/lm_controller/build --no-deps symlink_data
+[0.611s] running develop
+[0.696s] running egg_info
+[0.696s] creating lm_controller.egg-info
+[0.696s] writing lm_controller.egg-info/PKG-INFO
+[0.696s] writing dependency_links to lm_controller.egg-info/dependency_links.txt
+[0.696s] writing entry points to lm_controller.egg-info/entry_points.txt
+[0.696s] writing requirements to lm_controller.egg-info/requires.txt
+[0.696s] writing top-level names to lm_controller.egg-info/top_level.txt
+[0.697s] writing manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.698s] reading manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.698s] writing manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.699s] running build_ext
+[0.699s] Creating /workspace/src/install/lm_controller/lib/python3.10/site-packages/lm-controller.egg-link (link to .)
+[0.700s] Installing xarm_interface_node script to /workspace/src/install/lm_controller/lib/lm_controller
+[0.700s] 
+[0.700s] Installed /workspace/src/build/lm_controller
+[0.700s] running symlink_data
+[0.700s] creating /workspace/src/install/lm_controller/share/ament_index
+[0.700s] creating /workspace/src/install/lm_controller/share/ament_index/resource_index
+[0.700s] creating /workspace/src/install/lm_controller/share/ament_index/resource_index/packages
+[0.701s] symbolically linking /workspace/src/build/lm_controller/resource/lm_controller -> /workspace/src/install/lm_controller/share/ament_index/resource_index/packages
+[0.701s] symbolically linking /workspace/src/build/lm_controller/package.xml -> /workspace/src/install/lm_controller/share/lm_controller
+[0.701s] creating /workspace/src/install/lm_controller/share/lm_controller/launch
+[0.701s] symbolically linking /workspace/src/build/lm_controller/launch/gazebo.launch.py -> /workspace/src/install/lm_controller/share/lm_controller/launch
+[0.701s] symbolically linking /workspace/src/build/lm_controller/launch/controller.launch.py -> /workspace/src/install/lm_controller/share/lm_controller/launch
+[0.701s] creating /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/lite6.urdf -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/README.md -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/LICENSE -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf
+[0.701s] creating /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/link4.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/base.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/link2.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/link3.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/link6.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/gripper_lite.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/vacuum_gripper_lite.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/link5.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.701s] symbolically linking /workspace/src/build/lm_controller/lite6_urdf/visual/link1.stl -> /workspace/src/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.702s] creating /workspace/src/install/lm_controller/share/lm_controller/config
+[0.702s] symbolically linking /workspace/src/build/lm_controller/config/controllers.yaml -> /workspace/src/install/lm_controller/share/lm_controller/config
+[0.742s] Invoked command in '/workspace/src/build/lm_controller' returned '0': PYTHONPATH=/workspace/src/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/build/lm_controller/build --no-deps symlink_data

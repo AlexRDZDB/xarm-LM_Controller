@@ -1,0 +1,28 @@
+[0.365s] Invoking command in '/workspace/src/ros2_ws/build/lm_controller': PYTHONPATH=/workspace/src/ros2_ws/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/ros2_ws/build/lm_controller/build --no-deps symlink_data
+[0.513s] running develop
+[0.595s] running egg_info
+[0.595s] creating lm_controller.egg-info
+[0.595s] writing lm_controller.egg-info/PKG-INFO
+[0.595s] writing dependency_links to lm_controller.egg-info/dependency_links.txt
+[0.595s] writing entry points to lm_controller.egg-info/entry_points.txt
+[0.596s] writing requirements to lm_controller.egg-info/requires.txt
+[0.596s] writing top-level names to lm_controller.egg-info/top_level.txt
+[0.596s] writing manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.597s] reading manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.597s] writing manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.598s] running build_ext
+[0.598s] Creating /workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages/lm-controller.egg-link (link to .)
+[0.599s] Installing xarm_interface_node script to /workspace/src/ros2_ws/install/lm_controller/lib/lm_controller
+[0.599s] 
+[0.599s] Installed /workspace/src/ros2_ws/build/lm_controller
+[0.599s] running symlink_data
+[0.599s] creating /workspace/src/ros2_ws/install/lm_controller/share/ament_index
+[0.599s] creating /workspace/src/ros2_ws/install/lm_controller/share/ament_index/resource_index
+[0.599s] creating /workspace/src/ros2_ws/install/lm_controller/share/ament_index/resource_index/packages
+[0.599s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/resource/lm_controller -> /workspace/src/ros2_ws/install/lm_controller/share/ament_index/resource_index/packages
+[0.599s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/package.xml -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller
+[0.599s] error: can't copy '/workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual': doesn't exist or not a regular file
+[0.599s] creating /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/launch
+[0.599s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/launch/controller.launch.py -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/launch
+[0.600s] creating /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf
+[0.625s] Invoked command in '/workspace/src/ros2_ws/build/lm_controller' returned '1': PYTHONPATH=/workspace/src/ros2_ws/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/ros2_ws/build/lm_controller/build --no-deps symlink_data

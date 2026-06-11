@@ -1,0 +1,30 @@
+[0.357s] Invoking command in '/workspace/src/ros2_ws/build/lm_controller': PYTHONPATH=/workspace/src/ros2_ws/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/ros2_ws/build/lm_controller/build --no-deps symlink_data
+[0.499s] running develop
+[0.572s] running egg_info
+[0.572s] writing lm_controller.egg-info/PKG-INFO
+[0.572s] writing dependency_links to lm_controller.egg-info/dependency_links.txt
+[0.573s] writing entry points to lm_controller.egg-info/entry_points.txt
+[0.573s] writing requirements to lm_controller.egg-info/requires.txt
+[0.573s] writing top-level names to lm_controller.egg-info/top_level.txt
+[0.574s] reading manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.574s] writing manifest file 'lm_controller.egg-info/SOURCES.txt'
+[0.575s] running build_ext
+[0.575s] Creating /workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages/lm-controller.egg-link (link to .)
+[0.576s] Installing xarm_interface_node script to /workspace/src/ros2_ws/install/lm_controller/lib/lm_controller
+[0.576s] 
+[0.576s] Installed /workspace/src/ros2_ws/build/lm_controller
+[0.576s] running symlink_data
+[0.576s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/lite6.urdf -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf
+[0.576s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/README.md -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf
+[0.576s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/LICENSE -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf
+[0.577s] creating /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/link4.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/base.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/link2.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/link3.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/link6.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/gripper_lite.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/vacuum_gripper_lite.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/link5.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.577s] symbolically linking /workspace/src/ros2_ws/build/lm_controller/lite6_urdf/visual/link1.stl -> /workspace/src/ros2_ws/install/lm_controller/share/lm_controller/lite6_urdf/visual
+[0.598s] Invoked command in '/workspace/src/ros2_ws/build/lm_controller' returned '0': PYTHONPATH=/workspace/src/ros2_ws/build/lm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros2_ws/install/lm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/src/ros2_ws/build/lm_controller/build --no-deps symlink_data
